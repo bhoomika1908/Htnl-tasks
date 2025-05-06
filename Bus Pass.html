@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BusPass Form</title>
+    <link rel="icon"href="https://play-lh.googleusercontent.com/KvtOgdUQBAxVYfUe_Y5T86gTrz8dV4USrqmHXlkHyCROkVs4WgAxLN3iGPJwUALA-i4">
+</head>
+<body>
+    <center><img src="./tsrtc.png" height="150" width="150"></center>
+    <center><h1>TELANGANA STATE ROAD TRANSPORT CORPORATION</h1></center>
+    <center><h2>General Bus Pass Application</h2></center>
+    <fieldset>
+        <legend><h2><mark>Applicant's Details</mark></h2></legend>
+        <form>
+            <label for="name"><b>Name</b></label>        
+            <input type="text" id="name" required placeholder="(maximum characters:20)">
+            <label for="father"><b>Father's/Guardian's Name</b></label>
+            <input type="text" id="father" required>
+            <br><br>
+            <label for="dob"><b>Date of Birth</b></label>
+            <input type="date" id="dob" required>
+            <label id="Gender"><b>Gender</b></label>
+            <input type="radio" id="Gender" required name="gender">Female
+            <input type="radio" id="Gender" required name="gender">Male<br>
+            <br>
+            <label for="age"><b>Age As on</b></label>
+            <input type="tel" id="age"size="1" >Year(s)
+            <input type="tel" id="age"size="1" >Month(s)
+            <input type="tel" id="age"size="1" >Day(s)
+            <label for="addhar"><b>Aadhaar No:</b></label>
+            <input type="number" id="addhar">
+            <br><br>
+            <label for="wtsp"><b>WhatsApp No:</b></label>
+            <input type="number" id="wtsp">
+            <label for="mailid"><b>E-mail Id</b></label>
+            <input type="email" id="mailid" required placeholder="@ and . is madatory">
+            <br><br>
+            <label for="img"><b>Photo</b></label>
+            <input type="file" id="img"value="choose File"required>
+        </form>
+    </fieldset>
+    <fieldset>
+        <legend><h2><mark>Residential Address</mark></h2></legend>
+        <form>  
+            <label for="add"><b>Applicant's Address</b></label>
+            <textarea></textarea>
+            <label><b>District</b></label>
+            <select>
+                <option>Hyderbad</option>
+                <option>Rangareddy</option>
+                <option>Secunderabad</option>
+            </select>
+            <br><br>
+            <label><b>Mandal</b></label>
+            <select>
+                <option>Malkajgiri</option>
+                <option>Gadwal</option>
+                <option>Raichur</option>
+            </select>
+            <label><b>Village</b></label>
+            <select>
+                <option>Kompally</option>
+                <option>Dhulapally</option>
+                <option>Shapur</option>
+            </select>
+            <br><br>
+            <label for="pin"><b>Pincode</b></label>
+            <input type="number" id="pin" required>
+        </form> 
+    </fieldset>
+    <fieldset>
+        <legend><h2><mark>Pass Type Details</mark></h2></legend>
+        <form>
+        <label><b>City</b></label>
+        <select>
+            <option>Hyderabad</option>
+        </select>
+        <br><br>
+        <label><b>Pass Type</b></label>
+        <select>
+            <option>----------------------------Select--------------------------</option>
+            <option>Greater Pass</option>
+            <option>General Ordinary route pass MLTY</option>
+            <option>General Metro Express route pass MLTY</option>
+            <option>Ordinary Pass</option>
+            <option>Metro Pass</option>
+            <option>Metro Deluxe Pass</option>
+        </select>
+        <br><br>
+        <label><b>From Place DIstrict</b></label>
+        <select>
+            <option>----------Select----------</option>
+            <option>Hyderabad</option>
+        </select>
+        <label><b>To Place DIstrict</b></label>
+        <select>
+            <option>----------Select----------</option>
+            <option>Hyderabad</option>
+        </select>
+        <br><br>
+        <label for="place"><b>From Place</b></label>
+        <input type="text" id="place" required>
+        <label for="toplace"><b>To Place</b></label>
+        <input type="text" id="toplace" required>
+        <br><br>
+        <label><b>Route</b></label>
+        <select>
+            <option>
+                ----------Select----------
+            </option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend><h2><mark>Mode of Payment & Pass Collection</mark></h2></legend>
+        <form>
+        <label><b>Payment mode</b></label>   
+        <select>
+            <option>Select Payment Mode</option>
+            <option>Payment at Counter </option>
+        </select>
+        <label><b>Pass Delivery Mode</b></label>
+        <select>
+            <option>
+                Select Pass Delivery Mode
+            </option>
+        </select>
+        <br><br>
+        <label><b>Center at which you<br>want to collect pass</b></label>
+        <select>
+            <option>
+                ----------Select----------
+            </option>
+            <option>RTC ABIDS HYD[30/04/2025]</option>
+            <option>
+                RTC ECIL HYD\\[30/04/2025]
+            </option>
+        </select>
+        <br><br>
+    </form>
+</fieldset>
+        <center><input type="text" placeholder="Enter Captcha"required></center>
+        <br>
+        <center><input type="reset"></center>
+        <br><br>
+        <center><input type="submit"></center>
+        >
+</body>
+</html>
